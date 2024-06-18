@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: ninofullhd4k1080
+      MYSQL_DATABASE: feria
+    ports:
+      - "3333:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./back_end/db:/docker-entrypoint-initdb.d
+    command: --default-authentication-plugin=mysql_native_password
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      retries: 3
+      start_period: 30s
+      timeout: 5s
+
+volumes:
+  db_data:

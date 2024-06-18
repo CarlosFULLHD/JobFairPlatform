@@ -1,0 +1,36 @@
+###ESTAS SON RUTAS PARA PROBAR LA CONEXION CON LA BASE DE DATOS
+
+### get employees
+GET http://localhost:3000/api/instituciones
+
+###
+POST http://localhost:3000/api/instituciones
+Content-Type: application/json
+para subirlo al THUNDER CLIENT como un POST a la ruta de arriba
+{
+    "instituciones_id":"4",
+    "nombre": "Banco4",
+    "email": "banco@gmail.com",
+    "institucion": "bancaria",
+    "telefono": "221234",
+    "resena": "Banco 4 siempre tuyo",
+    "telefonowp": "+591 123123",
+    "ubicacion": "Av BANCO #1233"
+  }
+
+### Get employee by id
+GET http://localhost:3000/api/instituciones/2
+
+### Update an employee
+PATCH http://localhost:3000/api/instituciones/2
+Content-Type: application/json
+
+{
+    "nombre": "Banco BISA",
+    "email": "bancobisa@gmail.com",
+    "institucion": "bancaria",
+    "telefono": "22256584",
+    "resena": "Banco bisa siempre tuyo",
+    "telefonowp": "+591 7554654",
+    "ubicacion": "Av Libertador #1233"
+  }
