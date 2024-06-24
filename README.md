@@ -2,6 +2,9 @@
 
 ## Table of Contents
 
+<details>
+  <summary>Click to expand</summary>
+
 - [Introduction](#introduction)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
@@ -26,7 +29,8 @@
   - [Database Setup](#database-setup)
   - [Backend Setup](#backend-setup)
   - [Frontend Setup](#frontend-setup)
-- [License](#license)
+
+</details>
 
 ## Introduction
 
@@ -201,6 +205,3 @@ _Screenshot showing the list of students interested in charlas._
    npm run serve
    ```
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
